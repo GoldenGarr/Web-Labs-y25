@@ -46,13 +46,6 @@ function showTasks() {
     table.innerHTML = "";
     let tasks = JSON.parse(localStorage.getItem("tasks"));
 
-    // let html = '';
-    // tasks.forEach(task => {
-    //     html += "<li>${task}</li>";
-    // });
-    // table.innerHTML = html;
-
-
     for (let i = 0; i < tasks.length; i++) {
         console.log(tasks[i]);
 
@@ -61,6 +54,7 @@ function showTasks() {
 
         const taskContainer = document.createElement('div');
         const taskElement = document.createElement('div');
+        taskElement.classList.add("task-text")
         taskElement.textContent = tasks[i];
 
         taskContainer.appendChild(taskElement);
@@ -68,7 +62,8 @@ function showTasks() {
 
         const btnContainer = document.createElement('div');
         const removeBtn = document.createElement('button');
-        removeBtn.textContent = 'Удалить';
+        removeBtn.classList.add("button-remove")
+        removeBtn.textContent = 'X';
 
         (function (index) {
             removeBtn.addEventListener('click', function () {

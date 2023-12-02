@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Seafood restaurant</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="seafood restaurant, tasty food, halal">
+    <meta name="description" content="SOTA seafood restaurant 'Bacon & the Sea'">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/currentloc.css">
+    <link rel="stylesheet" href="css/webform.css">
+    <link href=' https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <script src="scripts/loadtime.js"></script>
+    <script src="scripts/currentloc.js"></script>
+    <script src="scripts/webform.js" defer></script>
+
+</head>
+<body>
+<header>
+    <div class="nav">
+        <span class="restaurant">Bacon & the Sea</span>
+        <a href="index.html" class="menu-item">B&S</a>
+        <a href="menu.html" class="menu-item">Меню</a>
+        <a href="about.html" class="menu-item">О нас</a>
+        <a href="contacts.html" class="menu-item">Контакты</a>
+        <a href="web-form.html" class="menu-item">Форма</a>
+    </div>
+</header>
+
+<main>
+    <div class="todo__container">
+        <div class="todo-input-container">
+            <label>
+                <input type="text" placeholder="Пожелание на неделю. Например: 'погладить кота', 'съездить на дачу'."
+                       class="todo-input-field">
+            </label>
+
+            <button class="todo-input-submit">Добавить пожелание</button>
+        </div>
+
+        <div>
+            <button type="submit" id="button-clear-completed">Очистить все пожелания</button>
+        </div>
+
+        <div>
+            <label for="ntasks">Количество пожеланий на неделю:</label>
+            <select name="ntasks" id="ntasks">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br>
+        </div>
+    </div>
+
+    <div id="task-table-container">
+        <div class="task_display">
+        </div>
+    </div>
+</main>
+<footer>
+    <section>
+        <img src="images/logo.jpg" class="logo__item" alt="Logo">
+    </section>
+    <br>
+</footer>
+
+</body>
+</html>

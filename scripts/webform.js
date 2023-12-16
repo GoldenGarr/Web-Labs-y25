@@ -4,7 +4,6 @@ localStorage.setItem("tasks", JSON.stringify([]))     // default task list
 let submitBtn = document.querySelector('.todo-input-submit');
 let clearBtn = document.getElementById('button-clear-completed');
 let selectOption = document.querySelector('#ntasks');
-// let tasks = [];
 
 
 submitBtn.addEventListener('click', () => {
